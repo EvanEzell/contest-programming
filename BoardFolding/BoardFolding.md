@@ -13,13 +13,13 @@ For example, consider the following paper (with 0 and 1 representing white and b
 11110100\
 00000000\
 01101110\
-\
+
 Here, Petya could choose the vertical line that goes between the two leftmost columns and the rest of the paper. Note that this is a valid choice: as he makes the fold, the cells from the leftmost two columns will all match their counterparts in the right part of the paper. This is how the paper looks like after the fold (with periods representing empty spaces):\
 
 ..010101\
 ..110100\
 ..000000\
-..101110\
+..101110
 
 Clearly, even after multiple folds the paper will always look like a subrectangle of the original paper. Two states of the game are considered the same if that rectangle has the same dimensions and the same offset with respect to the original top left corner of the paper. (Note that folding order does not matter. Two different sequences of folding may produce the same final state.)
 
@@ -33,24 +33,24 @@ for i in 0..N-1:
         paper[i][j] = (tonumber(compressedPaper[i][j / 6]) >> (j modulo 6)) modulo 2
 ```
  
-In the above pseudocode, "/" represents integer division (rounding down), ">>" is a bit shift to the right, and tonumber(x) maps the character x to a number between 0 and 63 as follows: the characters '0'-'9' map to integers 0-9, 'a'-'z' map to 10-35, 'A'-'Z' map to 36-61, '#' maps to 62, and '@' maps to 63.\
+In the above pseudocode, "/" represents integer division (rounding down), ">>" is a bit shift to the right, and tonumber(x) maps the character x to a number between 0 and 63 as follows: the characters '0'-'9' map to integers 0-9, 'a'-'z' map to 10-35, 'A'-'Z' map to 36-61, '#' maps to 62, and '@' maps to 63.
 
-If paper[i][j] = 0, then the cell (i,j) is white, otherwise it is black.\
+If paper[i][j] = 0, then the cell (i,j) is white, otherwise it is black.
 
-### Definition\
+### Definition
 **Class:** BoardFolding\
 **Method:** howMany\
 **Parameters:** int, int, vector <string>\
 **Returns:** long long \
-**Method signature:** long long howMany(int N, int M, vector <string> compressedPaper)\
-\
-#### Constraints\
-- N and M will be between 1 and 3000, inclusive.\
-- compressedPaper will contain N elements.\
-- Each element of compressedPaper will contain ceil(M / 6) elements.\
-- compressedPaper will contain only characters '0'-'9', 'a'-'z', 'A'-'Z', '#' and '@'.\
-\
-### Examples\
+**Method signature:** long long howMany(int N, int M, vector <string> compressedPaper)
+
+#### Constraints
+- N and M will be between 1 and 3000, inclusive.
+- compressedPaper will contain N elements.
+- Each element of compressedPaper will contain ceil(M / 6) elements.
+- compressedPaper will contain only characters '0'-'9', 'a'-'z', 'A'-'Z', '#' and '@'.
+
+### Examples
 \
 0)\
 2\
@@ -122,6 +122,6 @@ In this case the paper looks like:\
 000\
 010\
 000\
-\
-### My solution\
+
+### My solution
 My solution is in [BoardFolding.cpp](https://github.com/EvanEzell/Topcoder/blob/master/BoardFolding/BoardFolding.cpp). It is O(n^2) time complexity.
