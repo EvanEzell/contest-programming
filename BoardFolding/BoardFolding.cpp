@@ -103,11 +103,11 @@ BoardFolding::rotate(vector<string> &paper)
 
     for (int j = 0; j < M; j++)
     {
-        for (vector<string>::reverse_iterator i = paper.rbegin();
-             i != paper.rend();
-             ++i)
+        for (vector<string>::reverse_iterator itr = paper.rbegin();
+             itr != paper.rend();
+             ++itr)
         {
-            cur_column += (*i)[j];
+            cur_column += (*itr)[j];
         }
         rotated_paper.push_back(cur_column);
         cur_column = "";
