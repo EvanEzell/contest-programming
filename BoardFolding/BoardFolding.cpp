@@ -126,8 +126,8 @@ BoardFolding::combinations(vector<int> &start_places,
     {
         if (start_places[i])
             count = accumulate(end_places.begin()+i+1,
-                    end_places.end(), 
-                    count);
+                               end_places.end(), 
+                               count);
     }
 
     return count;
