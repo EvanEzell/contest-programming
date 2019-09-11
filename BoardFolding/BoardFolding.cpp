@@ -18,8 +18,8 @@ class BoardFolding
         vector<string> rotate(vector<string> &paper);
         int toNumber(char c);
         vector<string> decompress(int N, 
-                int M, 
-                vector<string>& compressedPaper);
+                                  int M, 
+                                  vector<string>& compressedPaper);
         vector<int> startingPlaces(vector<int>& id);
         long long combinations(vector<int> &start_places, 
                                vector<int> &end_places);
