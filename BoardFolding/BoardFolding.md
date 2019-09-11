@@ -12,7 +12,7 @@ For example, consider the following paper (with 0 and 1 representing white and b
 10010101\
 11110100\
 00000000\
-01101110\
+01101110
 
 Here, Petya could choose the vertical line that goes between the two leftmost columns and the rest of the paper. Note that this is a valid choice: as he makes the fold, the cells from the leftmost two columns will all match their counterparts in the right part of the paper. This is how the paper looks like after the fold (with periods representing empty spaces):\
 
@@ -121,7 +121,7 @@ In this case the paper looks like:\
 \
 000\
 010\
-000\
+000
 
 ### My solution
 My solution is in [BoardFolding.cpp](https://github.com/EvanEzell/Topcoder/blob/master/BoardFolding/BoardFolding.cpp). It is O(n^2) time complexity.
