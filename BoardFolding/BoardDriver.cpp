@@ -1,8 +1,9 @@
-#include "BoardFolding2.cpp"
+#include "BoardFolding.cpp"
 
 int main (int argc, char **argv)
 {
     class BoardFolding TheClass;
+
     vector<string> compressedPaper;
     const int N = atoi(argv[1]);
     const int M = atoi(argv[2]);
