@@ -9,7 +9,8 @@ class AliceGame
         long long findMinimumValue(long long a, long long b);
 };
 
-long long AliceGame::findMinimumValue(long long a, long long b)
+long long 
+AliceGame::findMinimumValue(long long a, long long b)
 {
     long long r = sqrt(a+b); // r must be a perfect square
 
