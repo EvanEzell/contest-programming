@@ -113,4 +113,4 @@ All 10^5 planets are in the same position, that is (0,0).
 Returns: 15720
 
 ### My solution
-My solution is in [TheEmpireStrikesBack.cpp](). It runs in O(Nlog(N)) time.
+My solution is in [TheEmpireStrikesBack.cpp](https://github.com/EvanEzell/Topcoder/blob/master/TheEmpireStrikesBack/TheEmpireStrikesBack.cpp). It runs in O(Nlog(N)) time.
