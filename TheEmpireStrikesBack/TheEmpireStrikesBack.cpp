@@ -9,8 +9,8 @@ class TheEmpireStrikesBack
 {
     public:
         long long find(long long ax, long long bx, long long cx,
-                 long long ay, long long by, long long cy,
-                 long long n, long long m);
+                       long long ay, long long by, long long cy,
+                       long long n, long long m);
 
     private:
         bool validT(unsigned long long t,
