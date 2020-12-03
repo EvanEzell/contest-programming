@@ -1,2 +1,1 @@
-# Topcoder
-Place for my Topcoder problem solutions
+My solutions to various contest programming problems
