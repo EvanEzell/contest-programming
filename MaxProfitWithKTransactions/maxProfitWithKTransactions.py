@@ -15,4 +15,4 @@ class Solution:
 		
 	    prevProfits,curProfits = curProfits,prevProfits
 			
-	 return prevProfits[-1]
+        return prevProfits[-1]
